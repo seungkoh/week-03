@@ -15,8 +15,16 @@ describe "Current Administration" do
     
     # Then you can assign any properties on the OpenStruct
     administration.president = "Barack Obama"
+    administration.first_lady = "Michelle Obama"
+    administration.vice_president = "Joe Biden"
     
-    administration.vice_president = "Broseph Jiden"
+    cab = OpenStruct.new
+    cab.state_department = "Hillary Clinton"
+    cab.treasury_department = "Timothy Geithner"
+    cab.defense_department = "Leon Panetta"
+    cab.justice_department = "Eric Holder"
+    
+    administration.cabinet = cab
     
     # This last line has `administration` so that it is returned as the subject
     administration

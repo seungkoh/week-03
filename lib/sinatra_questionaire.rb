@@ -2,14 +2,12 @@ require 'rubygems'
 require 'sinatra'
 
 get '/' do
-  redirect to('/index')
-end
-
-get '/index' do
+  @title = 'Are You More Democratic or Republican? - Questionaire Form'
   erb :index
 end 
 
-post '/show' do    
+post '/show' do
+  @title = 'Are You More Democratic or Republican? - Questionaire Result'
   answer_score = params[:post].flatten.select { |item| item.match(/\-?[012]/) }.map { |item| item.to_i }.inject{ |sum,x| sum + x }
   
   if(answer_score > 10)

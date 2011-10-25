@@ -1,73 +1,63 @@
-<html>
-  <head>
-    <title>Are You More Democratic or Republican? - Questionaire Form</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-  </head>
-  <body>
-    <div id="container">
-    <h1>Are You More Democratic or Republican?</h1>
-    <p>Please answer the simple questionaire below, which will calculate your political disposition as it relates to the
-        two major U.S. political parties.</p>
+<h1>Are You More Democratic or Republican?</h1>
+<p>Please answer the simple questionaire below, which will calculate your political disposition as it relates to the
+    two major U.S. political parties.</p>
         
-    <form name="questionaire" id="questionaire" action="/show" method="post">
-      <ol>
-        <li>Are you going to vote for Obama in 2012?<br />
-          <input type="radio" name="post[obama]" value="2" /> Yes
-          <input type="radio" name="post[obama]" value="-2" /> No
-          <input type="radio" name="post[obama]" value="0" /> Undecided
-        </li>
-        <li>People who make more than $200,000 a year should be taxed more than those who make less than this amount.<br />
-          <input type="radio" name="post[tax]" value="2" /> Strongly Agree
-          <input type="radio" name="post[tax]" value="1" /> Agree
-          <input type="radio" name="post[tax]" value="0" /> Neither
-          <input type="radio" name="post[tax]" value="-1" /> Disagree
-          <input type="radio" name="post[tax]" value="-2" /> Strongly Disagree          
-        </li>
-        <li>Universal healthcare is a bad idea.<br />
-          <input type="radio" name="post[healthcare]" value="-2" /> Strongly Agree
-          <input type="radio" name="post[healthcare]" value="-1" /> Agree
-          <input type="radio" name="post[healthcare]" value="0" /> Neither
-          <input type="radio" name="post[healthcare]" value="1" /> Disagree
-          <input type="radio" name="post[healthcare]" value="2" /> Strongly Disagree                    
-        </li>
-        <li>Abortion is murder of an innocent child.<br />
-          <input type="radio" name="post[abortion]" value="-2" /> Strongly Agree
-          <input type="radio" name="post[abortion]" value="-1" /> Agree
-          <input type="radio" name="post[abortion]" value="0" /> Neither
-          <input type="radio" name="post[abortion]" value="1" /> Disagree
-          <input type="radio" name="post[abortion]" value="2" /> Strongly Disagree          
-        </li>
-        <li>Homosexuals have the legal right to marriage.<br />
-          <input type="radio" name="post[gay]" value="2" /> Strongly Agree
-          <input type="radio" name="post[gay]" value="1" /> Agree
-          <input type="radio" name="post[gay]" value="0" /> Neither
-          <input type="radio" name="post[gay]" value="-1" /> Disagree
-          <input type="radio" name="post[gay]" value="-2" /> Strongly Disagree          
-        </li>
-        <li>Alternative energy sources are a better option than domestic offshore drilling.<br />
-          <input type="radio" name="post[energy]" value="2" /> Strongly Agree
-          <input type="radio" name="post[energy]" value="1" /> Agree
-          <input type="radio" name="post[energy]" value="0" /> Neither
-          <input type="radio" name="post[energy]" value="-1" /> Disagree
-          <input type="radio" name="post[energy]" value="-2" /> Strongly Disagree                    
-        </li>
-        <li>The government should not enforce stricter gun laws because they are already too strict.<br />
-          <input type="radio" name="post[gun]" value="-2" /> Strongly Agree
-          <input type="radio" name="post[gun]" value="-1" /> Agree
-          <input type="radio" name="post[gun]" value="0" /> Neither
-          <input type="radio" name="post[gun]" value="1" /> Disagree
-          <input type="radio" name="post[gun]" value="2" /> Strongly Disagree                    
-        </li>
-        <li>Unions are necessary to protect worker rights.<br />
-          <input type="radio" name="post[union]" value="2" /> Strongly Agree
-          <input type="radio" name="post[union]" value="1" /> Agree
-          <input type="radio" name="post[union]" value="0" /> Neither
-          <input type="radio" name="post[union]" value="-1" /> Disagree
-          <input type="radio" name="post[union]" value="-2" /> Strongly Disagree                    
-        </li>
-      </ol>
-      <input type="submit" value="Submit" />        
-    </form>
-    </div>
-  </body>
-</html>
+<form name="questionaire" id="questionaire" action="/show" method="post">
+  <ol>
+    <li>Are you going to vote for Obama in 2012?<br />
+      <input type="radio" name="post[obama]" value="2" /> Yes
+      <input type="radio" name="post[obama]" value="-2" /> No
+      <input type="radio" name="post[obama]" value="0" /> Undecided
+    </li>
+    <li>People who make more than $200,000 a year should be taxed more than those who make less than this amount.<br />
+      <input type="radio" name="post[tax]" value="2" /> Strongly Agree
+      <input type="radio" name="post[tax]" value="1" /> Agree
+      <input type="radio" name="post[tax]" value="0" /> Neither
+      <input type="radio" name="post[tax]" value="-1" /> Disagree
+      <input type="radio" name="post[tax]" value="-2" /> Strongly Disagree          
+    </li>
+    <li>Universal healthcare is a bad idea.<br />
+      <input type="radio" name="post[healthcare]" value="-2" /> Strongly Agree
+      <input type="radio" name="post[healthcare]" value="-1" /> Agree
+      <input type="radio" name="post[healthcare]" value="0" /> Neither
+      <input type="radio" name="post[healthcare]" value="1" /> Disagree
+      <input type="radio" name="post[healthcare]" value="2" /> Strongly Disagree                    
+    </li>
+    <li>Abortion is murder of an innocent child.<br />
+      <input type="radio" name="post[abortion]" value="-2" /> Strongly Agree
+      <input type="radio" name="post[abortion]" value="-1" /> Agree
+      <input type="radio" name="post[abortion]" value="0" /> Neither
+      <input type="radio" name="post[abortion]" value="1" /> Disagree
+      <input type="radio" name="post[abortion]" value="2" /> Strongly Disagree          
+    </li>
+    <li>Homosexuals have the legal right to marriage.<br />
+      <input type="radio" name="post[gay]" value="2" /> Strongly Agree
+      <input type="radio" name="post[gay]" value="1" /> Agree
+      <input type="radio" name="post[gay]" value="0" /> Neither
+      <input type="radio" name="post[gay]" value="-1" /> Disagree
+      <input type="radio" name="post[gay]" value="-2" /> Strongly Disagree          
+    </li>
+    <li>Alternative energy sources are a better option than domestic offshore drilling.<br />
+      <input type="radio" name="post[energy]" value="2" /> Strongly Agree
+      <input type="radio" name="post[energy]" value="1" /> Agree
+      <input type="radio" name="post[energy]" value="0" /> Neither
+      <input type="radio" name="post[energy]" value="-1" /> Disagree
+      <input type="radio" name="post[energy]" value="-2" /> Strongly Disagree                    
+    </li>
+    <li>The government should not enforce stricter gun laws because they are already too strict.<br />
+      <input type="radio" name="post[gun]" value="-2" /> Strongly Agree
+      <input type="radio" name="post[gun]" value="-1" /> Agree
+      <input type="radio" name="post[gun]" value="0" /> Neither
+      <input type="radio" name="post[gun]" value="1" /> Disagree
+      <input type="radio" name="post[gun]" value="2" /> Strongly Disagree                    
+    </li>
+    <li>Unions are necessary to protect worker rights.<br />
+      <input type="radio" name="post[union]" value="2" /> Strongly Agree
+      <input type="radio" name="post[union]" value="1" /> Agree
+      <input type="radio" name="post[union]" value="0" /> Neither
+      <input type="radio" name="post[union]" value="-1" /> Disagree
+      <input type="radio" name="post[union]" value="-2" /> Strongly Disagree                    
+    </li>
+  </ol>
+  <input type="submit" value="Submit" />        
+</form>
